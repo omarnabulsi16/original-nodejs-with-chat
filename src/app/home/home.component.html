@@ -1,0 +1,183 @@
+<div class = "container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse">
+            <a class="navbar-brand mx-auto">
+                <h3>Node JS</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink = "/" routerLinkActive = "active">Home</a>
+                </li>
+                <li class = "nav-items">
+                    <a class = "nav-link" routerLink = "/Sports" routerLinkActive = "active">Sports</a>
+                </li>
+                <li class = "nav-items">
+                    <a class = "nav-link" routerLink = "/Contact" routerLinkActive = "active">Contact Us</a>
+                </li>
+                <li>
+                    <a class = "nav-link" routerLink = "/About" routerLinkActive = "active">About Us</a>
+                </li>
+                <li>
+                    <a class = "nav-link" routerLink = "/Chat" routerLinkActive = "active">Chat Box</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class = "container-fluid d-flex justify-content-center">
+    <h3>Weather Report</h3>
+</div>
+<div>
+    <app-weather></app-weather>
+</div>
+
+<div class = "container-fluid d-flex justify-content-center">
+    <h3>News</h3>
+</div>
+
+<div id="myCarousel" class="carousel slide container-fluid" data-ride = "carousel">
+    <ol class = "carousel-indicators">
+        <li data-target = "#myCarousel" data-slide-to = "0"></li>
+        <li data-target = "#myCarousel" data-slide-to = "1"></li>
+        <li data-target = "#myCarousel" data-slide-to = "2"></li>
+        
+    </ol>
+    <div class="carousel-inner">  
+        <div class = "carousel-item active">
+            <div>
+                <div class = "container-fluid d-flex justify-content-center">
+                    <div>
+                        <h1>Example Headline</h1>
+                        <p>Hi this info that we will add from news</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "carousel-item">
+            <div>
+                <div class = "container-fluid d-flex justify-content-center">
+                    <div>
+                        <h1>Example Headline 2</h1>
+                        <p>Hi this info that we will add from news</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "carousel-item">
+            <div>
+                <div class = "container-fluid d-flex justify-content-center">
+                    <div>
+                        <h1>Example Headline 3</h1>
+                        <p>Hi this info that we will add from news</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<body>
+    <div class = "container p-5">
+        <ul class = "nav nav-tabs nav-justified">
+            <li class = "nav-item mr-1 active">
+                <a href = "#section-one" class = "nav-link bg-primary text-white" data-toggle = "tab">Latest News 1</a>
+            </li>
+            <li class = "nav-item mr-1">
+                <a href = "#section-two" class = "nav-link bg-primary text-white" data-toggle = "tab">Latest News 2</a>
+            </li>
+            <li class = "nav-item mr-1">
+                <a href = "#section-three" class = "nav-link bg-primary text-white" data-toggle = "tab">Latest News 3</a>
+            </li>
+        </ul>
+        <div class = "tab-pane fade bg-white text-dark" id = "section-one">
+            <p class = "p-4">21465461231681651624561231561321651653165566516516541561654</p>
+        </div>
+        <div class = "tab-pane fade bg-white text-dark" id = "section-two">
+            <p class = "p-4">ALSKDFJA;LSDKJFL;KASJDF;ADJSF;LAJSDKFLJA;SDLJF;ASDF</p>
+        </div>
+        <div class = "tab-pane fade bg-white text-dark" id = "section-three">
+            <p class = "p-4">Hello World</p>
+        </div>
+    </div>
+</body>
+
+
+
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+  
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-dark">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>

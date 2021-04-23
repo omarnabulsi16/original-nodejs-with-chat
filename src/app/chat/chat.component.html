@@ -1,0 +1,27 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="chat.component.scss">
+</head>
+<body style="background-color:hsl(210, 42%, 60%);">
+  <div class="container">
+  <header>
+    <h1 style="color: white">Chat Box</h1>
+    <p style="color: white">Total Users Logged In - {{users.total}}</p>
+  </header>
+  <ul>
+    <li class ="message" [ngClass] ="{self : message.self}" *ngFor="let message of messages">{{message.message}}</li> 
+  </ul>
+  <section>
+    <p *ngIf="loggedInUserName === '' " >
+        <input [(ngModel)]="username" placeholder = "Enter Name" class="input" />
+        <button (click)="loginUser()" class="btn btn-primary">Set Name</button>
+    </p>
+    <p *ngIf="loggedInUserName !== '' ">
+      <input [(ngModel)]="message" placeholder="Enter Message" class="input">  
+      <button (click)="sendMessage()" class="btn btn-primary">Send Message</button>
+    </p>
+  </section>
+</div>
+</body> 
+</html>
